@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="200" height="200" src="https://raw.githubusercontent.com/ibrahimBougaoua/mini-web-project/main/images/logo.png?token=AJ62QTVRQKMN6JRJAT2EXW3AHJH4E">
+</p>
+
 ## Réalisation d’un site web de formation en informatique
 
 Le but de ce projet est de réaliser un site web traitant d’un domaine de l’informatique, et fournissant des informations générales ainsi que des ressources d’apprentissage dans le domaine choisi ( Le choix du domaine est libre, à condition qu’il se rapporte à l’informatique).
@@ -13,6 +17,8 @@ Le travail est à réaliser en binôme ou trinôme. Au terme de ce projet, vous 
 
 ## Nb :
 
-<b>le projet sera axé sur la programmation web coté client (HTML5/CSS/JS) , aucune application coté serveur (ni base de données) n’est requise.</b>
-<b>Le travail doit être réalisé à l’aide de Notepad++ seulement.</b>
-<b>Il est interdit de copier du code à partir du Web, ou de n’importe quelle autre source. Par contre, vous êtes libres de récupérer les informations de votre site de formation directement du Web.</b>
+<b>1- le projet sera axé sur la programmation web coté client (HTML5/CSS/JS) , aucune application coté serveur (ni base de données) n’est requise.</b>
+
+<b>2- Le travail doit être réalisé à l’aide de Notepad++ seulement.</b>
+
+<b>3- Il est interdit de copier du code à partir du Web, ou de n’importe quelle autre source. Par contre, vous êtes libres de récupérer les informations de votre site de formation directement du Web.</b>
