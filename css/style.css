@@ -6,6 +6,35 @@ body {
         list-style: none;
     }
 
+/* début header */
+.text-content {
+    color: white;
+    float: left;
+}
+a.btn {
+    color: #fff;
+    background-color: #c35649;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 6px;
+}
+.logo-content {
+    float: right;
+}
+.text-content, .logo-content {
+    margin: 10px;
+}
+/* fin header */
+
+/* début nav */
+.btn-right {
+    float: right;
+    position: relative;
+    bottom: 35px;
+    right: 15px;
+}
+/* fin nav */
+
     /* help style */
     ht-yellow:hover {
         color: white;
@@ -38,7 +67,7 @@ body {
 
     /* header style */
     .header {
-        background-color: #3f51b5;
+        background-color: #39a767;
         padding: 10px;
         height: 100px;
         line-height: 0;
@@ -55,7 +84,7 @@ body {
 
     /* menu style */
     .navbar {
-        background-color: #3f51b5;
+        /* background-color: #3f51b5; */
         box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
         line-height: 25px;
     }
@@ -68,8 +97,8 @@ body {
     }
     .menu li a {
         transition: 1s;
-        color: rgb(255 255 255);
-        font-weight: bold;
+        color: rgb(158 158 158);
+        font-weight: 500;
         text-decoration: none;
         display: inline-block;
         padding: 12px 18px;
@@ -130,18 +159,6 @@ body {
     .down {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
-    }
-
-    .menu li:first-child {
-        background-color: #ffffff;
-        box-shadow: 0 0px 40px rgb(0 0 0 / 30%);
-    }
-    .menu li:first-child a {
-        color: #3f51b5;
-    }
-    .menu li:first-child:hover {
-        padding-left: 10px;
-        transition: 1s;
     }
 
     /* content style */
