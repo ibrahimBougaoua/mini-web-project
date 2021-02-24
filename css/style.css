@@ -2,11 +2,14 @@ body {
         margin: 0;
         padding: 0;
     }
+	h1 {
+		font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
     ul {
         list-style: none;
     }
 
-/* début header */
+/* dÃƒÆ’Ã‚Â©but header */
 .text-content {
     color: white;
     float: left;
@@ -14,7 +17,7 @@ body {
 a.btn {
     color: #fff;
     background-color: #c35649;
-    font-size: 18px;
+    font-size: 20px;
     padding: 6px;
     border-radius: 6px;
 }
@@ -22,11 +25,14 @@ a.btn {
     float: right;
 }
 .text-content, .logo-content {
-    margin: 10px;
+    margin: 30px;
+    line-height: 42px;
+    max-width: 600px;
+    font-size: 23px;
 }
 /* fin header */
 
-/* début nav */
+/* dÃƒÆ’Ã‚Â©but nav */
 .btn-right {
     float: right;
     position: relative;
@@ -69,8 +75,7 @@ a.btn {
     .header {
         background-color: #39a767;
         padding: 10px;
-        height: 100px;
-        line-height: 0;
+        height: 300px;
     }
 
     h1.header-logo {
@@ -86,11 +91,13 @@ a.btn {
     .navbar {
         /* background-color: #3f51b5; */
         box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
-        line-height: 25px;
+        line-height: 26px;
+        height: 55px;
     }
     ul.menu {
         max-width: 1150px;
         margin: 0 auto;
+        line-height: 32px;
     }
     .menu li {
         list-style: none;
@@ -210,8 +217,9 @@ a.btn {
         margin-bottom: 5px;
     }
     p {
-        line-height: 18px;
-        color: #4a4a4a;
+        line-height: 22px;
+        color: #49324b;
+        font-weight: 100;
     }
     a {
         text-decoration: none;
