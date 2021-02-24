@@ -15,21 +15,10 @@
 <!-- start menu -->
 <nav class="navbar">
     <ul class="menu">
-        <li class="home"><a href="#introduction"><span class="hm-yellow">H</span>ome</a> </li>
-        <li><a href="#Hommages"><span class="hm-yellow">H</span>tml</a> </li>
-        <li><a href="#Biographie"><span class="hm-yellow">C</span>ss <i class="arrow down"></i> </a>
-            <ul class="submenu">
-                <li><a href="#Enfance_et_formation">Submenu 1</a> </li>
-                <li><a href="#Engagement_politique">Submenu 2</a>
-                    <i class="arrow right"></i>
-                    <ul class="supersub">
-                        <li><a href="#Le_MTLD">Supersub 1</a> </li>
-                        <li><a href="#Le_FLN">Supersub 2</a></li>
-                        <li><a href="#La_bataille_dAlger_et_la_mort">Supersub 3</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+		<li class="item"><a id="page_1" onclick="ajaxCellPage(getPage('page_1'))" href="#404">Home</a></li>
+		<li class="item"><a id="page_2" onclick="ajaxCellPage(getPage('page_2'))" href="#404">Page 1</a></li>
+		<li class="item"><a id="page_3" onclick="ajaxCellPage(getPage('page_3'))" href="#404">Page 2</a></li>
+		<li class="item"><a id="page_4" onclick="ajaxCellPage(getPage('page_4'))" href="#404">Page 3</a></li>
     </ul>
 </nav>
 <!-- end menu -->
@@ -38,7 +27,7 @@
 <div class="content">
 
 <!-- start main -->
-<main class="main">
+<main id="main" class="main">
 
 </main>
 <!-- end main -->
@@ -59,17 +48,27 @@
 <!-- end footer -->
 
 <script>
-const xhr = new XMLHttpRequest();
-const content = document.getElementById("content");
-xhr.onload = function() {
-    if(this.status === 200) {
-		content.innerHTML = xhr.responseText();
-	} else {
-		console.warn("Did not recieve 200 ok from response");
-	}
+// get attribut href value by ID.
+function getPage(id)
+{
+	return document.getElementById(id).getAttribute('href').substring(1);
 }
-xhr.open('get','README.md',true);
-xhr.send();
+
+// Cell Page by name of file using getPage function
+function ajaxCellPage(name)
+{
+	const xhr = new XMLHttpRequest();
+	const main = document.getElementById("main");
+	xhr.onload = function() {
+		if(this.status === 200) {
+			main.innerHTML = xhr.responseText;
+		} else {
+			console.warn("Did not recieve 200 ok from response");
+		}
+	}
+	xhr.open('get',name + '.html');
+	xhr.send();
+}
 </script>
 
 </body>
