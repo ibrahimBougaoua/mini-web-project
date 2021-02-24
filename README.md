@@ -22,3 +22,18 @@ Le travail est à réaliser en binôme ou trinôme. Au terme de ce projet, vous 
 <b>2- Le travail doit être réalisé à l’aide de Notepad++ seulement.</b>
 
 <b>3- Il est interdit de copier du code à partir du Web, ou de n’importe quelle autre source. Par contre, vous êtes libres de récupérer les informations de votre site de formation directement du Web.</b>
+
+## Structure du projet
+
+<pre>
+[mini-web-project]/
+├── css/
+│   ├── style.css
+├── js/
+│   ├── main.js
+├── images/
+│   ├── logo.png
+├── pages/
+│   ├── 404.html
+└── index.html
+</pre>
