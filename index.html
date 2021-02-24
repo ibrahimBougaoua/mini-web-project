@@ -6,27 +6,36 @@
 </head>
 <body>
 
-<!-- début menu -->
-<nav class="navbar">
-    <ul class="menu">
-		<li class="item"><a id="home" onclick="ajaxCellPage(getPage('home'))" href="#404">Accueil</a></li>
-		<li class="item"><a id="cours" onclick="ajaxCellPage(getPage('cours'))" href="#cours">Cours</a></li>
-		<li class="item"><a id="categories" onclick="ajaxCellPage(getPage('categories'))" href="#categories">Catégories</a></li>
-    </ul>
-</nav>
-<!-- fin menu -->
-
 <!-- début header -->
 <header class="header" id="haut">
     <div class="text-content">
 	   <h1>Discover the world’s top course & creatives</h1>
 	   <p>Bienvenue, vous trouverez ici tout ce dont vous avez besoin bien sûr pour toutes les catégories.</p>
 	</div>
-    <div class="logo-content">
-	   <img src="images/coding.svg" alt="logo" />
-	</div>
 </header>
 <!-- fin header -->
+
+<!-- début menu -->
+<nav class="navbar">
+    <ul class="menu">
+        <li class="item"><a id="home" onclick="ajaxCellPage(getPage('home'))" href="#404">Accueil</a></li>
+        <li class="item"><a id="cours" onclick="ajaxCellPage(getPage('cours'))" href="#cours">Cours</a></li>
+        <li class="item"><a id="categories" onclick="ajaxCellPage(getPage('categories'))" href="#categories">Catégories</a>
+            <ul class="submenu">
+                <li><a href="#Enfance_et_formation"> Enfance et formation</a> </li>
+                <li><a href="#Engagement_politique"> Engagement politique</a>
+                    <i class="arrow right"></i>
+                    <ul class="supersub">
+                        <li><a href="#Le_MTLD"> Le MTLD </a> </li>
+                        <li><a href="#Le_FLN"> Le FLN</a></li>
+                        <li><a href="#La_bataille_dAlger_et_la_mort"> La bataille d'Alger et la mort</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+	</ul>
+</nav>
+<!-- fin menu -->
 
 <!-- start content -->
 <div class="content">
