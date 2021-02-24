@@ -6,22 +6,27 @@
 </head>
 <body>
 
-<!-- start header -->
-<header class="header" id="haut">
-    <h1 class="header-logo"><span class="ht-yellow"><span class="ht-skey">B</span>ar </span> <span class="ht-skey">H</span>ouch</h1>
-</header>
-<!-- end header -->
-
-<!-- start menu -->
+<!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-		<li class="item"><a id="page_1" onclick="ajaxCellPage(getPage('page_1'))" href="#404">Home</a></li>
-		<li class="item"><a id="page_2" onclick="ajaxCellPage(getPage('page_2'))" href="#404">Page 1</a></li>
-		<li class="item"><a id="page_3" onclick="ajaxCellPage(getPage('page_3'))" href="#404">Page 2</a></li>
-		<li class="item"><a id="page_4" onclick="ajaxCellPage(getPage('page_4'))" href="#404">Page 3</a></li>
+		<li class="item"><a id="home" onclick="ajaxCellPage(getPage('home'))" href="#404">Accueil</a></li>
+		<li class="item"><a id="cours" onclick="ajaxCellPage(getPage('cours'))" href="#cours">Cours</a></li>
+		<li class="item"><a id="categories" onclick="ajaxCellPage(getPage('categories'))" href="#categories">Catégories</a></li>
     </ul>
 </nav>
-<!-- end menu -->
+<!-- fin menu -->
+
+<!-- début header -->
+<header class="header" id="haut">
+    <div class="text-content">
+	   <h1>Discover the world’s top course & creatives</h1>
+	   <p>Bienvenue, vous trouverez ici tout ce dont vous avez besoin bien sûr pour toutes les catégories.</p>
+	</div>
+    <div class="logo-content">
+	   <img src="images/coding.svg" alt="logo" />
+	</div>
+</header>
+<!-- fin header -->
 
 <!-- start content -->
 <div class="content">
