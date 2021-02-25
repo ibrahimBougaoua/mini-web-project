@@ -8,8 +8,10 @@ body {
     ul {
         list-style: none;
     }
-
-/* dÃƒÆ’Ã‚Â©but header */
+	b {
+		color: #696969;
+	}
+/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but header */
 .text-content {
     color: white;
     float: left;
@@ -32,7 +34,7 @@ a.btn {
 }
 /* fin header */
 
-/* dÃƒÆ’Ã‚Â©but nav */
+/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but nav */
 .btn-right {
     float: right;
     position: relative;
@@ -40,6 +42,57 @@ a.btn {
     right: 15px;
 }
 /* fin nav */
+
+/* start slide */
+.course ul li {
+    float: left;
+    margin: 5px;
+}
+.course-item {
+    max-width: 245px;
+    box-shadow: 0 0px 2px rgb(0 0 0 / 28%);
+    margin: 0;
+    padding: 0;
+}
+.image {
+    height: 30%;
+}
+.image img {
+    height: 100%;
+    width: 100%;
+}
+.info h3 {
+    color: #39a767;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.info p {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.info {
+    line-height: 0.1;
+    padding: 6px;
+}
+a.read-more {
+    color: #39a767;
+    font-size: 16px;
+    border-radius: 6px;
+    float: right;
+}
+span.views {
+    color: #39a767;
+}
+footer.details {
+    margin: 0;
+    padding: 10px 8px 10px 8px;
+    border-top: 1px solid #cccccc6b;
+}
+/* end slide */
+
+/**/
 
     /* help style */
     ht-yellow:hover {
@@ -90,7 +143,7 @@ a.btn {
     /* menu style */
     .navbar {
         /* background-color: #3f51b5; */
-        box-shadow: 0 0px 30px rgb(0 0 0 / 50%);
+        box-shadow: 0 0px 10px rgb(0 0 0 / 50%);
         line-height: 26px;
         height: 55px;
     }
@@ -170,7 +223,7 @@ a.btn {
 
     /* content style */
     .content {
-        margin: 20px 120px;
+        margin: 0;
     }
 
     /* main style */
@@ -217,7 +270,7 @@ a.btn {
         margin-bottom: 5px;
     }
     p {
-        line-height: 22px;
+        line-height: 20px;
         color: #49324b;
         font-weight: 100;
     }
