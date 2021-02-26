@@ -92,7 +92,56 @@ footer.details {
 }
 /* end slide */
 
-/**/
+/* start pagination */
+.pagination {
+    float: left;
+    max-width: 100%;
+    margin: 12px;
+    position: relative;
+    left: 32vw;
+}
+ul.paginate {
+    margin: 0;
+    padding: 0;
+}
+
+li.paginate-item {
+    padding: 0;
+    margin: 2px!important;
+    transition: 1s;
+}
+li.paginate-item a {
+    color: #39a767;
+    border: 1px solid #39a767;
+    width: 20px;
+    height: 18px;
+    display: block;
+    font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 5px;
+    line-height: 1.3;
+}
+li.paginate-item a:hover {
+    background-color: #39a767;
+    color: #fff;
+    transition: 1s;
+}
+.paginate-selected {
+    color: #fff!important;
+    border: 1px solid #c35649!important;
+    background-color: #c35649!important;
+}
+.paginate-item.next a,.paginate-item.prev a {
+    width: 38px;
+    background-color: #c35649;
+    color: #fff;
+    border: 1px solid #c35649;
+}
+/* end pagination */
+
 
     /* help style */
     ht-yellow:hover {
