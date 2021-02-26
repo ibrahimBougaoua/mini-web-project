@@ -11,7 +11,7 @@ body {
 	b {
 		color: #696969;
 	}
-/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but header */
+/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but header */
 .text-content {
     color: white;
     float: left;
@@ -34,7 +34,7 @@ a.btn {
 }
 /* fin header */
 
-/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but nav */
+/* dÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©but nav */
 .btn-right {
     float: right;
     position: relative;
@@ -145,14 +145,87 @@ li.paginate-item a:hover {
     .lastest-course {
         font-size: 15px;
         color: #3e3e3e;
-        padding: 12px;
         font-family: sans-serif;
         height: 100%;
         box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
     }
 	
 	
-
+    /* aside style */
+    aside.aside {
+        float: right;
+        width: 30%;
+        height: 100%;
+        background-color: #fff;
+        /* box-shadow: 0 0px 3px rgb(0 0 0 / 35%); */
+    }
+	
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        background-color: #39a767;
+        color: #fff;
+        margin: 0;
+        padding: 12px;
+    }
+    h2:hover {
+        color: #ffc107;
+        transition: 1s;
+        box-shadow: inset 0 -2px #ffc107;
+    }
+	
+	
+	/* start categories */
+    .links-categories {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+    .links-categories ul li {
+        float: left;
+        margin: 22px 0 0 0;
+    }
+    .links-categories ul li a {
+        color: #39a767;
+        border: 1px solid #39a767;
+        padding: 8px;
+        margin: 5px 5px 0px 2px;
+        font-size: 16px;
+        transition: 2s;
+    }
+    .links-categories ul li a:hover {
+        background-color: #ffc107;
+        padding-left: 16px;
+        border: 1px solid #ffc107;
+        transition: 2s;
+    }
+    .links-categories ul {
+        margin: 0;
+    }
+	/* end categories */
+	
+	/* start gallery course */
+	section.gallery-course {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 12px;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+	img.gallery-course-img {
+		width: 100px;
+		height: 70px;
+	}
+	section.gallery-course li {
+		float: left;
+		margin: -3px 2px 2px 2px;
+	}
+	/* end gallery course */
+	
     /* help style */
     ht-yellow:hover {
         color: white;
@@ -331,10 +404,6 @@ li.paginate-item a:hover {
         color: #3f51b5;
         text-decoration-line: underline;
     }
-    h2 {
-        color: #3F51B5;
-        text-decoration-line: underline;
-    }
     h4:hover {
         color: #ffc107;
         transition: 1s;
@@ -344,11 +413,6 @@ li.paginate-item a:hover {
         color: #ffc107;
         transition: 1s;
         box-shadow: inset 0 -3px #ffc107;
-    }
-    h2:hover {
-        color: #ffc107;
-        transition: 1s;
-        box-shadow: inset 0 -2px #ffc107;
     }
     strong:hover{
         color: #ffc107;
@@ -365,27 +429,8 @@ li.paginate-item a:hover {
     h3 {
         color: #3f51b5;
         text-decoration-line: underline;
-        margin: 0;
     }
 
-    /* aside style */
-    aside.aside {
-        float: right;
-        width: 30%;
-        height: 100%;
-        background-color: #fff;
-        /* box-shadow: 0 0px 3px rgb(0 0 0 / 35%); */
-    }
-    aside.aside h2 {
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: sans-serif;
-        background-color: #3f51b5;
-        color: #fff;
-        margin: 0;
-        padding: 12px;
-    }
     tr {
         display: grid;
         box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
@@ -456,38 +501,6 @@ li.paginate-item a:hover {
         position: relative;
         left: 16%;
         bottom: 108px;
-    }
-    .links {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
-    }
-
-    .links ul li {
-        float: left;
-        margin: 22px 0 0 0;
-    }
-
-    .links ul li a {
-        color: #39a767;
-        border: 1px solid #39a767;
-        padding: 8px;
-        margin: 5px 5px 0px 2px;
-        font-size: 16px;
-        transition: 2s;
-    }
-
-    .links ul li a:hover {
-        background-color: #ffc107;
-        padding-left: 16px;
-        border: 1px solid #ffc107;
-        transition: 2s;
-    }
-
-    .links ul {
-        margin: 0;
     }
 
     /* top style */
