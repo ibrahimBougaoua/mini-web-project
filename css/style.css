@@ -142,6 +142,16 @@ li.paginate-item a:hover {
 }
 /* end pagination */
 
+    .lastest-course {
+        font-size: 15px;
+        color: #3e3e3e;
+        padding: 12px;
+        font-family: sans-serif;
+        height: 100%;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+    }
+	
+	
 
     /* help style */
     ht-yellow:hover {
@@ -272,15 +282,14 @@ li.paginate-item a:hover {
 
     /* content style */
     .content {
-        margin: 0;
+        margin: 20px 20px 0 40px;
     }
 
     /* main style */
     main.main {
         float: left;
-        width: 70%;
+        width: 68%;
         background-color: #fff;
-        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
     }
 
     ol {
@@ -305,18 +314,6 @@ li.paginate-item a:hover {
     header {
         font-size: 18px;
         font-weight: bold;
-    }
-    section {
-        font-size: 15px;
-        color: #3e3e3e;
-        padding: 12px;
-        font-family: sans-serif;
-        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
-    }
-    section#biographie ol li section {
-        margin: -10px;
-        box-shadow: 0 0px 2px rgb(0 0 0 / 35%);
-        margin-bottom: 5px;
     }
     p {
         line-height: 20px;
@@ -368,14 +365,16 @@ li.paginate-item a:hover {
     h3 {
         color: #3f51b5;
         text-decoration-line: underline;
+        margin: 0;
     }
 
     /* aside style */
     aside.aside {
         float: right;
-        width: 28%;
+        width: 30%;
+        height: 100%;
         background-color: #fff;
-        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
+        /* box-shadow: 0 0px 3px rgb(0 0 0 / 35%); */
     }
     aside.aside h2 {
         text-align: center;
@@ -459,10 +458,11 @@ li.paginate-item a:hover {
         bottom: 108px;
     }
     .links {
-        position: absolute;
-        width: 50%;
-        top: 60px;
-        left: 26%;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 0px 3px rgb(0 0 0 / 35%);
     }
 
     .links ul li {
@@ -471,8 +471,8 @@ li.paginate-item a:hover {
     }
 
     .links ul li a {
-        color: #fff;
-        border: 1px solid white;
+        color: #39a767;
+        border: 1px solid #39a767;
         padding: 8px;
         margin: 5px 5px 0px 2px;
         font-size: 16px;
