@@ -9,9 +9,9 @@
 <!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-        <li class="item"><a id="home" onclick="ajaxCellPage(getPage('home'))" href="#home">Accueil</a></li>
-        <li class="item"><a id="cours" onclick="ajaxCellPage(getPage('cours'))" href="#cours">Cours</a></li>
-        <li class="item"><a id="categories" onclick="ajaxCellPage(getPage('categories'))" href="#categories">Catégories</a>
+        <li class="item"><a href="">Accueil</a></li>
+        <li class="item"><a href="pages/cours.html">Cours</a></li>
+        <li class="item"><a href="pages/categories.html">Catégories</a>
             <ul class="submenu">
                 <li><a href="#Enfance_et_formation"> Enfance et formation</a> </li>
                 <li><a href="#Engagement_politique"> Engagement politique</a>
@@ -165,30 +165,6 @@
     <h1 class="footer-logo"><span class="ht-blue"><span class="ht-skey">B</span>ar </span> <span class="ht-skey">H</span>ou <span class="ht-skey">C</span>h</h1>
 </footer>
 <!-- end footer -->
-
-<script>
-// get attribut href value by ID.
-function getPage(id)
-{
-	return document.getElementById(id).getAttribute('href').substring(1);
-}
-
-// Cell Page by name of file using getPage function
-function ajaxCellPage(name)
-{
-	const xhr = new XMLHttpRequest();
-	const content = document.getElementById("content");
-	xhr.onload = function() {
-		if(this.status === 200) {
-			content.innerHTML = xhr.responseText;
-		} else {
-			console.warn("Did not recieve 200 ok from response");
-		}
-	}
-	xhr.open('get',name + '.html');
-	xhr.send();
-}
-</script>
 
 </body>
 </html>
