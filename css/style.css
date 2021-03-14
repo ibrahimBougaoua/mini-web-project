@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #fafafa;
 }
 h1 {
     font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -310,6 +311,7 @@ h1.header-logo {
 /* menu style */
 .navbar {
     box-shadow: 0 0px 3px rgb(0 0 0 / 50%);
+    background-color: #fff;
     line-height: 26px;
     height: 55px;
 }
@@ -392,14 +394,16 @@ ul.menu {
 
 /* content style */
 .content {
-    margin: 20px 20px 0 40px;
+    margin: 0;
+    padding: 0;
 }
 
 /* main style */
 main.main {
     float: left;
-    width: 68%;
-    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 ol {
@@ -447,11 +451,6 @@ h4:hover {
     box-shadow: inset 0 -1px #ffc107;
 }
 */
-h3:hover {
-    color: #ffc107;
-    transition: 1s;
-    box-shadow: inset 0 -3px #ffc107;
-}
 strong:hover{
     color: #ffc107;
     transition: 1s;
@@ -566,20 +565,21 @@ span.top {
 /********* start footer ********/
 footer.footer {
     background-color: #39a767;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
+    margin-top: 65px;
     width: 100%;
+    float: left;
 }
 .footer-col {
     width: 25em;
     float: left;
     height: 12em;
-    padding: 15px 22px 15px 22px;
+    padding: 35px 22px 35px 22px;
 }
 .footer-copyright {
     float: left;
     width: 100%;
+    background-color: #297a4b;
+    padding: 5px 0 5px 0;
 }
 .footer-col img {
     max-width: 360px;
@@ -635,6 +635,7 @@ article.left-article img {
 article.right-article {
     width: 70%;
     float: right;
+    background-color: #fafafa;
 }
 article.right-article h3 {
     color: #fc682d;
@@ -645,8 +646,7 @@ article.right-article p {
     font-size: 16px;
 }
 article.right-article footer {
-    margin-top: 20px;
-    position: relative;
+    margin-top: 102px;
 }
 article.right-article a {
     color: #fff;
@@ -657,6 +657,189 @@ article.right-article a {
     border-radius: 4px;
 }
 article.right-article a:hover {
+    background-color: #39a767;
+    transition: 1s;
+}
+
+/********************/
+section.certification-section p {
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    margin-top: 45px;
+}
+section.certification-section {
+    background-color: #39a767;
+    height: 200px;
+    line-height: 1;
+    max-width: 100%;
+    padding: 30px;
+    /* margin-top: 80px; */
+    float: left;
+}
+/********************/
+
+/***************/
+section.formation-section {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+section.formation-section h3 {
+    text-align: center;
+    color: #fc682d;
+    font-size: 22px;
+    font-weight: bold;
+}
+article.left-formation {
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    left: 11%;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 20%);
+}
+
+article.right-formation {
+    width: 25%;
+    float: right;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    right: 13%;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 20%);
+}
+
+article.left-formation p {
+    padding: 10px;
+    color: #222;
+    font-size: 15px;
+}
+
+article.left-formation h3 {
+    text-align: center;
+}
+
+article.right-formation h3 {
+    text-align: center;
+}
+
+section.formation-section a {
+    color: #fff;
+    padding: 15px;
+    border-radius: 0px;
+    text-align: center;
+    width: 100%;
+}
+section.formation-section h2 {
+    text-align: center;
+    color: #fc682d;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: transparent;
+}
+section.formation-section footer {
+    background-color: #fc682d;
+    padding: 10px;
+    text-align: center;
+}
+
+article.right-formation p {
+    padding: 10px;
+    color: #222;
+    font-size: 15px;
+}
+article.left-formation footer {
+    margin-top: 48px;
+}
+/**************/
+section.devops-section {background-color: #39a767;height: 280px;line-height: 1;max-width: 100%;padding: 30px;margin-top: 80px;float: left;}
+
+section.devops-section h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+section.devops-section p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+article.canter-formation {
+    float: left;
+    width: 20%;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    left: 13%;
+}
+section.formation-section a:hover {
+    background-color: #39a767;
+    transition: 1s;
+}
+
+section.formation-section a {
+    background-color: #fc682d;
+    border-radius: 2px;
+    transition: 1s;
+    padding: 20px;
+}
+/**************/
+section.rend-section {
+    background-image: url('../images/style/experts-devops-syloe.jpg');
+    background-position: 50% -206.412px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+}
+article.rend-absolute-section {
+    position: absolute;
+    background-color: #000000b3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+article.rend-absolute-section h3 {
+    color: #fff;
+    width: 50%;
+    position: relative;
+    left: 26%;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+article.rend-absolute-section a {
+    background-color: #fc682d;
+    border-radius: 2px;
+    transition: 1s;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+article.rend-absolute-section p {
+    width: 50%;
+    position: relative;
+    left: 26%;
+    font-size: 20px;
+    margin-top: 30px;
+}
+article.rend-absolute-section a:hover {
     background-color: #39a767;
     transition: 1s;
 }
