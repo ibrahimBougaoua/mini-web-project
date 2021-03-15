@@ -565,7 +565,7 @@ span.top {
 /********* start footer ********/
 footer.footer {
     background-color: #39a767;
-    margin-top: 65px;
+    /* margin-top: 65px; */
     width: 100%;
     float: left;
 }
@@ -806,7 +806,7 @@ section.rend-section {
     height: 100%;
     float: left;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 article.rend-absolute-section {
     position: absolute;
@@ -870,7 +870,9 @@ section.contact-section {
     background-color: #ffffff;
     height: 410px;
     line-height: 1;
-    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* margin-top: 80px; */
     width: 100%;
     float: left;
 }
@@ -879,7 +881,7 @@ section.contact-section h3 {
     color: #fc682d;
     text-align: center;
     font-size: 22px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 section.contact-section {
     text-align: center;
@@ -958,4 +960,105 @@ article.left-contact img {
     max-width: 100%;
     position: relative;
     bottom: 140px;
+}
+/*****************/
+section.modalites-section {
+    background-color: #39a767;
+    height: 480px;
+    line-height: 1;
+    max-width: 100%;
+    padding: 30px;
+    margin-top: 80px;
+    float: left;
+}
+
+section.modalites-section h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+section.modalites-section p {
+    text-align: left;
+    color: #222;
+    padding: 10px;
+}
+article.modalites-article {
+    float: left;
+    width: 25%;
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    left: 11%;
+    border-radius: 2px 50px 2px 2px;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 20%);
+}
+article.modalites-article h3 {
+    color: #39a767;
+}
+
+article.modalites-article a {
+    background-color: #fc682d;
+    border-radius: 2px;
+    transition: 1s;
+    padding: 15px;
+    color: #fff;
+}
+
+article.modalites-article a:hover {
+    transition: 1s;
+    background-color: #39a767;
+}
+
+article.modalites-article footer {
+    background-color: #fc682d;
+    padding: 10px;
+    text-align: center;
+}
+
+section.modalites-section p {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+article.modalites-article p {
+    font-size: 16px;
+    color: #222;
+    text-align: left;
+    padding: 10px;
+}
+section.modalites-section h2 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+button.rechercher {
+    color: #ffffff;
+    border: 1px solid #fc682d;
+    background-color: #fc682d;
+    border-radius: 2px;
+    font-size: 18px;
+    transition: 1s;
+    font-weight: 100;
+    padding: 8px;
+    position: relative;
+    right: 5px;
+    top: 1px;
+}
+
+section.rechercher-section form {
+    width: 65%;
+    text-align: center;
+    position: relative;
+    left: 20%;
+}
+section.rechercher-section {
+    margin-bottom: 50px;
+}
+button.rechercher:hover {
+    background-color: #39a767;
+    transition: 1s;
+    cursor: pointer;
+    border: 1px solid #39a767;
 }
