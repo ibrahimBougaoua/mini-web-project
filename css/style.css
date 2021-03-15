@@ -626,15 +626,19 @@ footer.footer {
 /********* end footer ********/
 
 article.left-article {
-    width: 30%;
+    width: 25%;
     float: left;
 }
 article.left-article img {
     max-width: 100%;
+    position: relative;
+    left: 0;
+    top: 25px;
 }
 article.right-article {
     width: 70%;
     float: right;
+    margin-right: 60px;
     background-color: #fafafa;
 }
 article.right-article h3 {
@@ -646,7 +650,7 @@ article.right-article p {
     font-size: 16px;
 }
 article.right-article footer {
-    margin-top: 102px;
+    margin-top: 60px;
 }
 article.right-article a {
     color: #fff;
@@ -842,4 +846,116 @@ article.rend-absolute-section p {
 article.rend-absolute-section a:hover {
     background-color: #39a767;
     transition: 1s;
+}
+/**********/
+section.teach-section h3 {
+    text-decoration: none;
+}
+section.teach-section {
+    margin: 40px 40px 0 0;
+    float: left;
+}
+section.teach-section footer {
+    margin-top: 25px;
+}
+
+section.teach-section img {
+    max-width: 100%;
+    position: relative;
+    left: 115px;
+    top: 25px;
+}
+/***************/
+section.contact-section {
+    background-color: #ffffff;
+    height: 410px;
+    line-height: 1;
+    margin-top: 80px;
+    width: 100%;
+    float: left;
+}
+
+section.contact-section h3 {
+    color: #fc682d;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+}
+section.contact-section {
+    text-align: center;
+}
+
+section.contact-section form {
+    /* width: 50%; */
+    /* height: 80%; */
+    /* left: 45%; */
+    /* padding: 15px; */
+    /* border-radius: 3px; */
+}
+
+.contact-row {
+    width: 99%;
+    padding: 5px;
+}
+
+.contact-row label {
+    width: 5%;
+    float: left;
+    line-height: 2;
+    color: #222222bf;
+    text-align: left;
+}
+
+input[type="email"] {
+    border: 1px solid #22222226;
+    height: 40px;
+    width: 700px;
+    padding-left: 10px;
+}
+
+input[type="text"] {
+    border: 1px solid #22222226;
+    height: 40px;
+    width: 700px;
+    padding-left: 10px;
+}
+
+.contact-row textarea {
+    border: 1px solid #22222226;
+    height: 130px;
+    width: 700px;
+    padding-left: 10px;
+}
+
+section.contact-section button {
+    padding: 10px;
+    float: right;
+    margin: 15px 35px 0 0;
+    background-color: #fc682d;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: 1s;
+}
+section.contact-section button:hover {
+    transition: 1s;
+    background-color: #39a767;
+    cursor: pointer;
+}
+article.left-contact {
+    float: left;
+    width: 38%;
+}
+
+article.right-contact {
+    float: right;
+    width: 60%;
+    margin: 10px;
+}
+
+article.left-contact img {
+    max-width: 100%;
+    position: relative;
+    bottom: 140px;
 }
