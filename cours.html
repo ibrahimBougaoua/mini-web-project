@@ -1,32 +1,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
     <title></title>
+	
 </head>
 <body>
 
 <!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-        <li class="item"><a href="">Accueil</a></li>
+		<li class="item"><a href="">Accueil</a></li>
         <li class="item"><a href="cours.html">Cours</a></li>
         <li class="item"><a href="categories.html">Catégories</a>
-            <ul class="submenu">
-                <li><a href="#Enfance_et_formation"> Enfance et formation</a> </li>
-                <li><a href="#Engagement_politique"> Engagement politique</a>
-                    <i class="arrow right"></i>
-                    <ul class="supersub">
-                        <li><a href="#Le_MTLD"> Le MTLD </a> </li>
-                        <li><a href="#Le_FLN"> Le FLN</a></li>
-                        <li><a href="#La_bataille_dAlger_et_la_mort"> La bataille d'Alger et la mort</a> </li>
-                    </ul>
-                </li>
+		<i class="arrow down"></i>
+            <ul class="submenu">			
+				<li><a href="#">Php</a></li>
+				<li><a href="#">Css</a></li>
+				<li><a href="#">Wordpress</a></li>
+				<li><a href="#">Laravel</a></li>
+				<li><a href="#">Forge</a></li>
+				<li><a href="#">JetStreem</a></li>
+				<li><a href="#">Blogger</a></li>
+				<li><a href="#">Ui/Ux</a></li>
+				<li><a href="#">Net work NK</a></li>
+				<li><a href="#">Cisco</a></li>
+				<li><a href="#">Eth hacking</a></li>
+				<li><a href="#">C/C++</a></li>
+				<li><a href="#">C#</a></li>
+				<li><a href="#">Database</a></li>
+				<li><a href="#">Cake php</a></li>
+				<li><a href="#">Database</a></li>
+				<li><a href="#">Javascript</a></li>
             </ul>
         </li>
 	</ul>
 	<div class="btn-right">
-		<a class="btn" href="#main">Discover</a>
+		<ul>
+			<li><a href="#inscrire">S'inscrire</a></li>
+			<li><a href="#identifier">S'identifier</a></li>
+		</ul>
 	</div>
 </nav>
 <!-- fin menu -->
@@ -34,12 +47,12 @@
 <!-- début header -->
 <header class="header" id="haut">
     <div class="text-content">
-	   <h1>Discover the world’s top course & creatives</h1>
+	   <h1>Découvrez les meilleurs cours et créations au monde.</h1>
 	   <p>Bienvenue, vous trouverez ici tout ce dont vous avez besoin bien sûr pour toutes les catégories.</p>
-	   <a class="btn" href="#main">Discover</a>
+	   <a class="btn" href="#main">Découvrir</a>
 	</div>
     <div class="logo-content">
-	   <img src="" alt="Discover" />
+	   <img src="images/style/online_lesson_header.png" alt="Online lesson" />
 	</div>
 </header>
 <!-- fin header -->
@@ -47,12 +60,12 @@
 <!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-        <li class="item"><a href="#c++">C++</a></li>
-        <li class="item"><a href="#cisco">Cisco</a></li>
-        <li class="item"><a href="#database">Database</a></li>
-        <li class="item"><a href="#programming">Programming</a></li>
-        <li class="item"><a href="#eth-hacking">Eth Hacking</a></li>
-        <li class="item"><a href="#web-dev">Web Dev</a></li>
+        <li class="item"><a href="#c++">Docker</a></li>
+        <li class="item"><a href="#cisco">Docker</a></li>
+        <li class="item"><a href="#database">Docker</a></li>
+        <li class="item"><a href="#programming">Docker</a></li>
+        <li class="item"><a href="#eth-hacking">Docker</a></li>
+        <li class="item"><a href="#web-dev">Docker</a></li>
 	</ul>
 </nav>
 <!-- fin menu -->
@@ -60,8 +73,12 @@
 <!-- start content -->
 <div id="content" class="content">
 
+<!-- start main -->
+<main id="main" class="main">
+
 <!-- start course -->
 <div class="course">
+<h4>Mes cours</h4>
 <ul>
 	<li>
 		<section class="course-item">
@@ -198,21 +215,6 @@
 			</footer>
 		</section>
 	</li>
-	<li>
-		<section class="course-item">
-			<header class="image">
-				<img src="images/network.jpeg" alt="Web Dev" />
-			</header>
-			<div class="info">
-				<h3>Networking cisco</h3>
-				<p>I will troubleshoot, fix,computer,network device.</p>
-			</div>
-			<footer class="details">
-				<b>25/02/2021</b>
-				<a class="read-more" href="#">Voire plus</a>
-			</footer>
-		</section>
-	</li>
 </ul>
 
 <!-- start pagination -->
@@ -228,34 +230,16 @@
 			<a href="#2">2</a>
 		</li>
 		<li class="paginate-item">
-			<a href="#3">3</a>
+			<a class="paginate-selected"  href="#3">3</a>
 		</li>
 		<li class="paginate-item">
 			<a href="#4">4</a>
 		</li>
 		<li class="paginate-item">
-			<a class="paginate-selected" href="#5">5</a>
+			<a href="#5">5</a>
 		</li>
 		<li class="paginate-item">
 			<a href="#6">6</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#7">7</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#8">8</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#9">9</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#10">10</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#11">11</a>
-		</li>
-		<li class="paginate-item">
-			<a href="#12">12</a>
 		</li>
 		<li class="paginate-item next">
 			<a href="#next">Next</a>
@@ -267,12 +251,55 @@
 </div>
 <!-- end course -->
 
+</main>
+<!-- end main -->
+
+<!-- start aside -->
+<aside class="aside">
+									
+</aside>
+<!-- end aside -->
+
+
 </div>
 <!-- end content -->
 
-<!-- start footer --
+<!-- start footer -->
 <footer class="footer">
-    <h1 class="footer-logo"><span class="ht-blue"><span class="ht-skey">B</span>ar </span> <span class="ht-skey">H</span>ou <span class="ht-skey">C</span>h</h1>
+    <div class="footer-row">	
+		<div class="footer-col">
+			<img src="images/style/online_lesson_header.png" alt="Online lesson" />
+		</div>
+		<div class="footer-col">
+			<h4>QUI SOMMES-NOUS ?</h4>
+			<p>Formation-dz.com est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
+			<p>Formation-dz.com est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
+		</div>
+		<div class="footer-col">
+			<h4>Liens rapides</h4>
+			<ul>
+				<li><a href="#">Php</a></li>
+				<li><a href="#">Css</a></li>
+				<li><a href="#">Wordpress</a></li>
+				<li><a href="#">Laravel</a></li>
+				<li><a href="#">Forge</a></li>
+				<li><a href="#">JetStreem</a></li>
+				<li><a href="#">Blogger</a></li>
+				<li><a href="#">Ui/Ux</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">Django</a></li>
+				<li><a href="#">Nodejs</a></li>
+				<li><a href="#">Python</a></li>
+				<li><a href="#">Flask</a></li>
+				<li><a href="#">Nodejs</a></li>
+				<li><a href="#">Postman</a></li>
+				<li><a href="#">Npm</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<h4>Formation Devops - Copyrights © 2021 All Rights Reserved.</h4>
+	</div>
 </footer>
 <!-- end footer -->
 

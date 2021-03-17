@@ -1,137 +1,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
-	
-	<script type="text/javascript">
-	var quiz = [
-				  {
-					qst : "Quelle est la forme complète de Devops ?",
-					option : [
-					  "Développement et opérations",
-					  "Numérique et opérations",
-					  "Conduite et opérations",
-					  "Aucune de ces réponses"
-					],
-					answer : 1 // arrays start with 0, so answer is 70 meters
-				  },
-				  {
-					qst : "Laquelle des méthodes suivantes ne peut pas être testée par la classe de test JUnit ?",
-					option : [
-					  "Méthodes protégées",
-					  "Méthodes privées",
-					  "Méthodes publiques",
-					  "Aucune de ces réponses"
-					],
-					answer : 3
-				  },
-				  {
-					qst : "Quelle commande est utilisée pour supprimer un répertoire vide ?",
-					option : [
-					  "remove",
-					  "rmdir",
-					  "rdir",
-					  "rm"
-					],
-					answer : 2
-				  },
-				  {
-					qst : "Quelle méthode de classe Assert vérifie qu'une condition est vraie ?",
-					option : [
-					  "assert void (condition booléenne)",
-					  "assert void (condition booléenne)",
-					  "void assertTrue (condition booléenne)",
-					  "void assertChecks (condition booléenne)"
-					],
-					answer : 0
-				  },
-				  {
-					qst : "Lesquels des outils suivants sont les outils populaires pour DevOps ?",
-					option : [
-					  "Jenkins et Monit",
-					  "Nagios et ELK",
-					  "Jenkins et Ansible",
-					  "Tout ce qui précède"
-					],
-					answer : 3
-				  }
-				];
-
-	var moyenne = 0;
-
-	function genererQuiz()
-	{
-		let html = '';
-		for(let i = 0;i<quiz.length;i++)
-		{
-			html += '<div class="item-quiz">';
-			html += '<h4>' + quiz[i].qst + '</h4>';
-			html += '<ul>';
-			for(let j = 0;j<quiz[i].option.length;j++)
-			{
-				html += '<li>';
-				html += '<input type="radio" id="qst-' + i + '-option-' + j + '" name="qst-' + i +'" value="' + quiz[i].option[j] + '" />';
-				html += '<label id="label-' + i + '-option-' + j +'">' + quiz[i].option[j] + '</label>';
-				html += '</li>';
-			}
-			html += '</ul>';
-			html += '</div>';
-		}
-		return html;
-	}
-	
-	function checkReponse()
-	{
-		var nbr_reponse = 0,counter = 0;
-		for(let i = 0;i<quiz.length;i++)
-		{
-		    for(let j = 0;j<quiz[i].option.length;j++)
-			{
-				var reponse = document.getElementById('qst-' + i + '-option-' + j);
-				if( reponse.checked )
-				{
-					nbr_reponse++;
-				}
-			}
-			for(let j = 0;j<quiz[i].option.length;j++)
-			{
-			    var reponse = document.getElementById('qst-' + i + '-option-' + j);
-				if( reponse.checked )
-				{	var label = document.getElementById('label-' + i + '-option-' + j);
-					if( reponse.value === quiz[i].option[quiz[i].answer] )
-					{
-						label.style.color = "green";
-						moyenne++;
-					} else {
-						label.style.color = "red";
-					}
-				} else {
-					counter++;
-				}
-			}
-		}
-
-		if(nbr_reponse >= 2)
-		   moyenne--;
-		
-		if( counter === quiz.length*4 )
-			getMessage();
-		else
-			getMoy();
-	}
-	
-	function getMessage()
-	{	
-	    document.getElementById("quiz-footer").innerHTML = "<span style='color:white;'>Choisis la bonne réponse</span>";
-	}
-	
-	function getMoy()
-	{
-	    document.getElementById("quiz-footer").innerHTML = "<span>Resultat : " + moyenne + "</span>";
-	}
-	</script>
-
 </head>
 <body>
 
@@ -203,28 +74,36 @@
 
 <!-- start main -->
 <main id="main" class="main">
-	<section class="quiz">
-		<header id="quiz-header">
-			<h3>Quiz Devops MCQ et test en ligne.</h3>
-		</header>
-		<div class="all-quiz">
-			<script type="text/javascript">document.write(genererQuiz());</script>
-			<div class="item-quiz">
-				<button onclick="checkReponse()">Valider</button>
-			</div>
-		</div>
-		<footer id="quiz-footer">
-		</footer>
-	</section>
+
+<!-- start login section -->
+<section class="signup-section">
+    <header>
+		<h4>create an account.</h4>
+	</header>
+	<form action="#" method="POST">
+		<label for="nom">Nom</label>
+		<input type="text" name="nom" placeholder="Nom" />
+		<label for="prenom">Prenom</label>
+		<input type="text" name="prenom" placeholder="Prenom" />
+		<label for="email">E-mail</label>
+		<input type="email" name="email" placeholder="email" />
+		<label for="sexe">Sexe</label>
+		<select name="sexe">
+			<option value="man">Man</option>
+			<option value="woman">Woman</option>
+		</select>
+		<label for="telephone">Telephone</label>
+		<input type="text" name="telephone" placeholder="telephone" />
+		<label for="username">Password</label>
+		<input type="text" name="password" placeholder="password" />
+		<span class="have-account"><a href="#">I have an account</a></span>
+		<button class="signup" type="button">Sign up</button>
+	</form>
+</section>
+<!-- end login section -->
+
 </main>
 <!-- end main -->
-
-<!-- start aside -->
-<aside class="aside">
-									
-</aside>
-<!-- end aside -->
-
 
 </div>
 <!-- end content -->
