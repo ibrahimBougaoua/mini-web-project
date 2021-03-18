@@ -1,43 +1,39 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>S'inscrire</title>
     <link rel="stylesheet" href="css/style.css">
-    <title></title>
+	<script type="text/javascript" src="js/form.js"></script>
 </head>
 <body>
 
 <!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-		<li class="item"><a href="">Accueil</a></li>
-        <li class="item"><a href="cours.html">Cours</a></li>
-        <li class="item"><a href="categories.html">Catégories</a>
+		<li class="item"><a href="index.html">Accueil</a></li>
+        <li class="item"><a href="blog.html">Blog</a></li>
+        <li class="item"><a href="#">Certifications</a>
 		<i class="arrow down"></i>
-            <ul class="submenu">			
-				<li><a href="#">Php</a></li>
-				<li><a href="#">Css</a></li>
-				<li><a href="#">Wordpress</a></li>
-				<li><a href="#">Laravel</a></li>
-				<li><a href="#">Forge</a></li>
-				<li><a href="#">JetStreem</a></li>
-				<li><a href="#">Blogger</a></li>
-				<li><a href="#">Ui/Ux</a></li>
-				<li><a href="#">Net work NK</a></li>
-				<li><a href="#">Cisco</a></li>
-				<li><a href="#">Eth hacking</a></li>
-				<li><a href="#">C/C++</a></li>
-				<li><a href="#">C#</a></li>
-				<li><a href="#">Database</a></li>
-				<li><a href="#">Cake php</a></li>
-				<li><a href="#">Database</a></li>
-				<li><a href="#">Javascript</a></li>
+            <ul class="submenu">	
+				<li><a href="#">Certifications DevOps Quality Assurance Engineer™ (DevOps-QA™)</a></li>
+				<li><a href="#">Certifications DevOps Operations Engineer™ (DevOps-OPS™)</a></li>
+				<li><a href="#">Certifications DevOps Project Manager™ (DevOps-PM™)</a></li>
+				<li><a href="#">Certifications DevOps Release Manager™ (DevOps-RM™)</a></li>
+				<li><a href="#">Certifications DevOps Generalist™ (DevOps-GEN™)</a></li>
+				<li><a href="#">Certifications DevOps Executive™ (DevOps-EXEC™)</a></li>
+				<li><a href="#">Certifications DevOps Product Owner™ (DevOps-PO™)</a></li>
+				<li><a href="#">Certifications DevOps Architect™ (DevOps-ARCH™)</a></li>
+				<li><a href="#">Certifications DevOps Developer™ (DevOps-DEV™)</a></li>
+				<li><a href="#">Certifications DevOps Project Manager™ (DevOps-PM™)</a></li>
+				<li><a href="#">Certifications DevOps Release Manager™ (DevOps-RM™)</a></li>
+				<li><a href="#">Certifications DevOps Trainer™ (DevOps-TRA™)</a></li>
             </ul>
         </li>
 	</ul>
 	<div class="btn-right">
 		<ul>
-			<li><a href="#inscrire">S'inscrire</a></li>
-			<li><a href="#identifier">S'identifier</a></li>
+			<li><a href="signup.html">S'inscrire</a></li>
+			<li><a href="login.html">S'identifier</a></li>
 		</ul>
 	</div>
 </nav>
@@ -46,9 +42,8 @@
 <!-- début header -->
 <header class="header" id="haut">
     <div class="text-content">
-	   <h1>Découvrez les meilleurs cours et créations au monde.</h1>
-	   <p>Bienvenue, vous trouverez ici tout ce dont vous avez besoin bien sûr pour toutes les catégories.</p>
-	   <a class="btn" href="#main">Découvrir</a>
+	   <h1>Bienvenue, nous vous proposons les meilleurs cours dans le domaine Devops.</h1>
+	   <a class="btn" href="single.html">Commencer le cours</a>
 	</div>
     <div class="logo-content">
 	   <img src="images/style/online_lesson_header.png" alt="Online lesson" />
@@ -59,12 +54,14 @@
 <!-- début menu -->
 <nav class="navbar">
     <ul class="menu">
-        <li class="item"><a href="#c++">Docker</a></li>
-        <li class="item"><a href="#cisco">Docker</a></li>
-        <li class="item"><a href="#database">Docker</a></li>
-        <li class="item"><a href="#programming">Docker</a></li>
-        <li class="item"><a href="#eth-hacking">Docker</a></li>
-        <li class="item"><a href="#web-dev">Docker</a></li>
+        <li class="item"><a href="index.html">Docker</a></li>
+        <li class="item"><a href="index.html">Git</a></li>
+        <li class="item"><a href="index.html">Subversion</a></li>
+        <li class="item"><a href="index.html">Github</a></li>
+        <li class="item"><a href="index.html">Jenkins</a></li>
+        <li class="item"><a href="index.html">Bitbucket</a></li>
+        <li class="item"><a href="index.html">Bamboo</a></li>
+        <li class="item"><a href="index.html">CircleCI</a></li>
 	</ul>
 </nav>
 <!-- fin menu -->
@@ -78,26 +75,27 @@
 <!-- start login section -->
 <section class="signup-section">
     <header>
-		<h4>create an account.</h4>
+		<h4>Créer un compte.</h4>
 	</header>
-	<form action="#" method="POST">
-		<label for="nom">Nom</label>
-		<input type="text" name="nom" placeholder="Nom" />
-		<label for="prenom">Prenom</label>
-		<input type="text" name="prenom" placeholder="Prenom" />
-		<label for="email">E-mail</label>
-		<input type="email" name="email" placeholder="email" />
-		<label for="sexe">Sexe</label>
-		<select name="sexe">
+	
+	<form action="#" onsubmit="return validationSignup()" method="POST">
+		<label id="label_nom" for="nom">Nom</label>
+		<input type="text" id="nom" name="nom" placeholder="Nom" />
+		<label id="label_prenom" for="prenom">Prenom</label>
+		<input type="text" id="prenom" name="prenom" placeholder="Prenom" />
+		<label id="label_email" for="email">E-mail</label>
+		<input type="email" id="email" name="email" placeholder="email" />
+		<label id="label_sexe" for="sexe">Sexe</label>
+		<select id="sexe" name="sexe">
 			<option value="man">Man</option>
 			<option value="woman">Woman</option>
 		</select>
-		<label for="telephone">Telephone</label>
-		<input type="text" name="telephone" placeholder="telephone" />
-		<label for="username">Password</label>
-		<input type="text" name="password" placeholder="password" />
-		<span class="have-account"><a href="#">I have an account</a></span>
-		<button class="signup" type="button">Sign up</button>
+		<label id="label_telephone" for="telephone">Telephone</label>
+		<input type="text" id="telephone" name="telephone" placeholder="telephone" />
+		<label id="label_password" for="password">Mot de pass</label>
+		<input type="text" id="password" name="password" placeholder="password" />
+		<span class="have-account"><a href="login.html">J'ai un compte</a></span>
+		<button class="signup" type="submit">S'inscrire</button>
 	</form>
 </section>
 <!-- end login section -->
@@ -116,28 +114,27 @@
 		</div>
 		<div class="footer-col">
 			<h4>QUI SOMMES-NOUS ?</h4>
-			<p>Formation-dz.com est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
-			<p>Formation-dz.com est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
+			<p>DevDz est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
 		</div>
 		<div class="footer-col">
 			<h4>Liens rapides</h4>
 			<ul>
-				<li><a href="#">Php</a></li>
-				<li><a href="#">Css</a></li>
-				<li><a href="#">Wordpress</a></li>
-				<li><a href="#">Laravel</a></li>
-				<li><a href="#">Forge</a></li>
-				<li><a href="#">JetStreem</a></li>
-				<li><a href="#">Blogger</a></li>
-				<li><a href="#">Ui/Ux</a></li>
-				<li><a href="#">Ajax</a></li>
-				<li><a href="#">Django</a></li>
-				<li><a href="#">Nodejs</a></li>
-				<li><a href="#">Python</a></li>
-				<li><a href="#">Flask</a></li>
-				<li><a href="#">Nodejs</a></li>
-				<li><a href="#">Postman</a></li>
-				<li><a href="#">Npm</a></li>
+				<li><a href="index.html">Docker</a></li>
+				<li><a href="index.html">Git</a></li>
+				<li><a href="index.html">Subversion</a></li>
+				<li><a href="index.html">Github</a></li>
+				<li><a href="index.html">Jenkins</a></li>
+				<li><a href="index.html">Bitbucket</a></li>
+				<li><a href="index.html">Bamboo</a></li>
+				<li><a href="index.html">CircleCI</a></li>
+				<li><a href="index.html">Concourse</a></li>
+				<li><a href="index.html">TeamCity</a></li>
+				<li><a href="index.html">Travis CI</a></li>
+				<li><a href="index.html">Terraform</a></li>
+				<li><a href="index.html">Ansible</a></li>
+				<li><a href="index.html">Puppet</a></li>
+				<li><a href="index.html">Salt</a></li>
+				<li><a href="index.html">Kubernetes</a></li>
 			</ul>
 		</div>
 	</div>

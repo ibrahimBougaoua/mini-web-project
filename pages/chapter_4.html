@@ -1,0 +1,317 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/single.css">
+    <title></title>
+	
+</head>
+<body>
+
+<!-- début menu -->
+<nav class="navbar">
+    <ul class="menu">
+		<li class="item"><a href="../index.html">Accueil</a></li>
+        <li class="item"><a href="../blog.html">Blog</a></li>
+        <li class="item"><a href="#">Certifications</a>
+		<i class="arrow down"></i>
+            <ul class="submenu">			
+				<li><a href="#">Certifications DevOps Quality Assurance Engineer™ (DevOps-QA™)</a></li>
+				<li><a href="#">Certifications DevOps Operations Engineer™ (DevOps-OPS™)</a></li>
+				<li><a href="#">Certifications DevOps Project Manager™ (DevOps-PM™)</a></li>
+				<li><a href="#">Certifications DevOps Release Manager™ (DevOps-RM™)</a></li>
+				<li><a href="#">Certifications DevOps Generalist™ (DevOps-GEN™)</a></li>
+				<li><a href="#">Certifications DevOps Executive™ (DevOps-EXEC™)</a></li>
+				<li><a href="#">Certifications DevOps Product Owner™ (DevOps-PO™)</a></li>
+				<li><a href="#">Certifications DevOps Architect™ (DevOps-ARCH™)</a></li>
+				<li><a href="#">Certifications DevOps Developer™ (DevOps-DEV™)</a></li>
+				<li><a href="#">Certifications DevOps Project Manager™ (DevOps-PM™)</a></li>
+				<li><a href="#">Certifications DevOps Release Manager™ (DevOps-RM™)</a></li>
+				<li><a href="#">Certifications DevOps Trainer™ (DevOps-TRA™)</a></li>
+            </ul>
+        </li>
+	</ul>
+	<div class="btn-right">
+		<ul>
+			<li><a href="../signup.html">S'inscrire</a></li>
+			<li><a href="../login.html">S'identifier</a></li>
+		</ul>
+	</div>
+</nav>
+<!-- fin menu -->
+
+<!-- début header -->
+<header class="header" id="haut">
+    <div class="text-content">
+	   <h1>DevOps - Introduction aux fondements et principes clés.</h1>
+	   <p>Certification DevOps Institute Foundation (DOFD) - DASA DevOps Fundamentals.</p>
+	   <a class="btn" href="#main">Commencer</a>
+	</div>
+    <div class="logo-content">
+	   <img src="../images/style/teacher_flatline.png" alt="Online lesson" />
+	</div>
+</header>
+<!-- fin header -->
+
+<!-- start content -->
+<div id="content" class="content">
+
+<!-- start main -->
+<main id="main" class="main">
+
+<progress max="60" value="50"></progress>
+
+<section class="presentation-section">
+	<div class="presentation-absolute">
+		<h4>Intégration et Déploiement Continus</h4>
+		<p>Certification DevOps Institute Foundation (DOFD) - DASA DevOps Fundamentals</p>
+		<a class="btn" href="#main">Commencer</a>
+		<div class="next-prev">
+			<a class="btn btn-prev" href="chapter_3.html">Précédent</a>
+			<a class="btn btn-next" href="chapter_5.html">Suivant</a>
+		</div>
+	</div>
+	<img src="../images/content/single.png" alt="Online lesson" />
+</section>
+
+<section class="description-section">
+	<h4>Intégration et Déploiement Continus</h4>
+	<article>
+		<p>L'approche CI/CD permet d'augmenter la fréquence de distribution des applications grâce à l'introduction de l'automatisation au niveau des étapes de développement des applications. Les principaux concepts liés à l'approche CI/CD sont l'intégration continue, la distribution continue et le déploiement continu. L'approche CI/CD représente une solution aux problèmes posés par l'intégration de nouveaux segments de code pour les équipes de développement et d'exploitation (ce qu'on appelle en anglais « integration hell », ou l'enfer de l'intégration).</p>
+		<p>Plus précisément, l'approche CI/CD garantit une automatisation et une surveillance continues tout au long du cycle de vie des applications, des phases d'intégration et de test jusqu'à la distribution et au déploiement. Ensemble, ces pratiques sont souvent désignées par l'expression « pipeline CI/CD » et elles reposent sur une collaboration agile entre les équipes de développement et d'exploitation.</p>
+		<strong>Quelle est la différence entre CI et CD (et l'autre CD) ?</strong>
+		<p>L'acronyme « CI/CD » a plusieurs significations. Le « CI » de CI/CD désigne toujours l'« intégration continue », à savoir un processus d'automatisation pour les développeurs. L'intégration continue consiste, pour les développeurs, à apporter régulièrement des modifications au code de leur application, à les tester, puis à les fusionner dans un référentiel partagé. Cette solution permet d'éviter de travailler en même temps sur un trop grand nombre d'éléments d'une application, qui pourraient entrer en conflit les uns avec les autres.</p>
+		<p>Le « CD » de CI/CD désigne la « distribution continue » et/ou le « déploiement continu », qui sont des concepts très proches, parfois utilisés de façon interchangeable. Les deux concepts concernent l'automatisation d'étapes plus avancées du pipeline, mais ils sont parfois dissociés pour illustrer le haut degré d'automatisation.</p>
+		<p>Dans le cadre de la distribution continue, généralement les modifications apportées par le développeur à une application sont automatiquement testées et téléchargées dans un référentiel (tel que GitHub ou un registre de conteneurs), où elles peuvent être déployées dans un environnement de production actif par l'équipe d'exploitation. Le processus de distribution continue permet de résoudre les problèmes de visibilité et de communication entre l'équipe de développement et l'équipe métier. Ainsi, son objectif consiste à simplifier au maximum le déploiement de nouveau code.</p>
+		<p>Le déploiement continu (l'autre signification possible de « CD ») peut désigner le transfert automatique des modifications du développeur depuis le référentiel vers l'environnement de production, où elles peuvent être utilisées par les clients. Ce processus permet de soulager les équipes d'exploitation surchargées par les tâches manuelles qui ralentissent la distribution des applications. Il repose sur la distribution continue et automatise l'étape suivante du pipeline.</p>
+		<p>L'expression « CI/CD » peut désigner soit uniquement les deux pratiques liées d'intégration continue et de distribution continue, soit les trois pratiques, c'est-à-dire l'intégration continue, la distribution continue et le déploiement continu. Pour compliquer encore les choses, il arrive que l'expression « distribution continue » englobe également le processus de déploiement continu.</p>
+		<p>En conclusion, mieux vaut ne pas trop s'attarder sur ces questions de sémantique. Il suffit de retenir que l'approche CI/CD se rapporte à un processus, souvent représenté sous forme de pipeline, qui consiste à introduire un haut degré d'automatisation et de surveillance continues dans le processus de développement des applications. La signification réelle de ces termes varie au cas par cas, selon le niveau d'automatisation du pipeline CI/CD. De nombreuses entreprises commencent par l'intégration continue, puis se mettent peu à peu à automatiser la distribution et le déploiement, par exemple dans le cadre du développement d'applications cloud-native.</p>
+		<strong>L'intégration continue</strong>
+		<p>Le concept de développement d'applications modernes consiste à faire travailler plusieurs développeurs simultanément sur différentes fonctions d'une même application. Toutefois, si une entreprise prévoit de fusionner tous ces morceaux de code source le même jour (le « merge day » ou « jour du fusionnement »), alors la tâche risque de s'avérer laborieuse et de nécessiter beaucoup de procédures manuelles et de temps. En effet, lorsqu'un développeur qui travaille seul apporte des modifications à une application, celles-ci peuvent entrer en conflit avec les différentes modifications apportées simultanément par d'autres développeurs. Ce problème se complexifie encore si chaque développeur a personnalisé son propre environnement de développement intégré, au lieu d'en définir un seul dans le cloud, pour toute l'équipe.</p>
+		<p>L'intégration continue (CI) permet aux développeurs de fusionner plus fréquemment leurs modifications de code dans une « branche » partagée, ou un « tronc », parfois même tous les jours. Une fois que les modifications apportées par un développeur sont fusionnées, elles sont validées par la création automatique de l'application et l'exécution de différents niveaux de test automatisés (généralement des tests unitaires et d'intégration) qui permettent de vérifier que les modifications n'entraînent pas de dysfonctionnement au sein de l'application. En d'autres termes, il s'agit de tester absolument tout, des classes et fonctions jusqu'aux différents modules qui constituent l'application. En cas de détection d'un conflit entre le code existant et le nouveau code, le processus d'intégration continue permet de résoudre les dysfonctionnements plus facilement, plus rapidement et plus fréquemment.</p>
+		<strong>Distribution continue</strong>
+		<p>Après l'automatisation de la création et des tests unitaires et d'intégration dans le cadre de l'intégration continue, la distribution continue automatise la publication du code validé dans un référentiel. Aussi, pour garantir l'efficacité du processus de distribution continue, il faut d'abord introduire le processus d'intégration continue dans le pipeline de développement. La distribution continue permet de disposer d'une base de code toujours prête à être déployée dans un environnement de production.</p>
+		<p>Dans le cadre de la distribution continue, chaque étape (de la fusion des modifications de code jusqu'à la distribution des versions prêtes pour la production) implique l'automatisation des processus de test et de publication du code. À la fin de ce processus, l'équipe d'exploitation est en mesure de déployer facilement et rapidement une application dans un environnement de production.</p>
+		<strong>Déploiement continu</strong>
+		<p>L'étape finale d'un pipeline CI/CD mature est le déploiement continu. En complément du processus de distribution continue, qui automatise la publication d'une version prête pour la production dans un référentiel de code, le déploiement continu automatise le lancement d'une application dans un environnement de production. En l'absence de passerelle manuelle entre la production et l'étape précédente du pipeline, le déploiement continu dépend surtout de la conception de l'automatisation des processus de test.</p>
+		<p>Dans la pratique, dans le cadre du déploiement continu, une modification apportée par un développeur à une application pourrait être publiée quelques minutes seulement après la rédaction du code en question (en supposant qu'elle passe les tests automatisés). Il est ainsi beaucoup plus facile de recevoir et d'intégrer en continu les commentaires des utilisateurs. Ensemble, ces trois pratiques CI/CD réduisent les risques liés au déploiement des applications, puisqu'il est plus simple de publier des modifications par petites touches qu'en un seul bloc. Cette approche nécessite néanmoins un investissement de départ considérable, car les tests automatisés devront être rédigés de manière à s'adapter à un large éventail d'étapes de test et de lancement dans le pipeline CI/CD.</p>
+	</article>
+</section>
+
+<section class="box-section">
+	<article>
+		<header>
+			<h4>Contenu du cours</h4>
+		</header>
+		<table>
+			<tr>
+			<th>Introduction</th>
+			<td>3 sessions / 7 min</td>
+			</tr>
+			<tr>
+			<th>Explorons l'univers du DevOps - Histoire et définitions</th>
+			<td>11 sessions / 37 min</td>
+			</tr>
+			<tr>
+			<th>Explorons la valeur du DevOps - CALMS et Golden Circle</th>
+			<td>7 sessions / 30 min</td>
+			</tr>
+			<tr>
+			<th>Les principes fondamentaux du DevOps - Three Ways</th>
+			<td>6 sessions / 23 min</td>
+			</tr>
+			<tr>
+			<th>Les pratiques techniques du DevOps - Intégration et Déploiement Continus</th>
+			<td>9 sessions / 32 min</td>
+			</tr>
+			<tr>
+			<th>Les frameworks Business et Techniques utilisés en DevOps</th>
+			<td>10 sessions / 34 min</td>
+			</tr>
+		</table>
+	</article>
+</section>
+
+</main>
+<!-- end main -->
+
+<!-- start aside -->
+<aside class="aside">
+	<section class="aside-box-section">
+		<header>
+			<h4>Formateur</h4>
+		</header>
+		<div class="box-content-section">
+			<div class="right-box-content">
+				<h5>Jordan Assouline</h5>
+				<strong>Technical Evangelist DevSecOps</strong>
+			</div>
+			<div class="left-box-content">
+				<img src="../images/content/man.jpg" alt="Online lesson" />
+			</div>
+		</div>
+		<footer>
+			<p>Après avoir obtenu un bac +5 d'expert en ingénierie de l'informatique et des systèmes d'informations spécialisé Système, Réseau et Cloud Computing, et travaillé notamment chez Orange, j'ai décidé de me lancer dans le Consulting.</p>
+		</footer>
+	</section>
+	
+	<section class="aside-box-section">
+		<header>
+			<h4>Ce que vous apprendrez</h4>
+		</header>
+		<table>
+			<tr>
+			<th>Gagner une compréhension pousée de ce qu'est le DevOps et ce en quoi il consiste</th>
+			</tr>
+			<tr>
+			<th>Expliquer et mettre en place de l'Intégration et du Déploiement Continus (CI/CD)</th>
+			</tr>
+			<tr>
+			<th>Comprendre la manière dont les méthodes agiles et l'ITSM s'articulent avec le DevOps</th>
+			</tr>
+			<tr>
+			<th>Améliorer la collaboration entre les développeurs et les opérationnels</th>
+			</tr>
+		</table>
+	</section>
+	
+	<section class="aside-box-section">
+		<header>
+			<h4>Prérequis</h4>
+		</header>
+		<table>
+			<tr>
+			<th>Savoir utiliser un ordinateur à un niveau débutant</th>
+			</tr>
+			<tr>
+			<th>Connaissances de base sur le développement de logiciel informatique (pas en langage de développement)</th>
+			</tr>
+			<tr>
+			<th>Avoir eu au moins une expérience professionnelle en informatique</th>
+			</tr>
+		</table>
+	</section>
+	
+	<section class="aside-box-section">
+		<header>
+			<h4>Quiz</h4>
+		</header>
+		<p>Si vous avez des informations préalables ou si vous avez réussi le cours depuis un autre site, vous pouvez également passer le test directement.</p>
+		<footer>
+			<a class="btn" href="quiz.html">Commencer</a>
+		</footer>
+	</section>
+	<section class="aside-box-section">
+		<header>
+			<h4>Contenu du cours</h4>
+		</header>
+		<table>
+			<tr>
+			<th>Introduction</th>
+			<td>3 sessions / 7 min</td>
+			</tr>
+			<tr>
+			<th>Explorons l'univers du DevOps</th>
+			<td>11 sessions / 37 min</td>
+			</tr>
+			<tr>
+			<th>Explorons la valeur du DevOps</th>
+			<td>7 sessions / 30 min</td>
+			</tr>
+			<tr>
+			<th>Les principes fondamentaux du DevOps</th>
+			<td>6 sessions / 23 min</td>
+			</tr>
+			<tr>
+			<th>Les pratiques techniques du DevOps</th>
+			<td>9 sessions / 32 min</td>
+			</tr>
+			<tr>
+			<th>Les frameworks Business et Techniques utilisés</th>
+			<td>10 sessions / 34 min</td>
+			</tr>
+		</table>
+		<footer>
+			<a class="btn" href="#main">Les tests</a>
+		</footer>
+	</section>
+	<section class="aside-box-section">
+		<header>
+			<h4>Certifications DevOps (CF DO)</h4>
+		</header>
+			<ul>
+				<li><a href="#">CF DO Generalist™ (DO-GEN™)</a></li>
+				<li><a href="#">CF DO Executive™ (DO-EXEC™)</a></li>
+				<li><a href="#">CF DO Product Owner™ (DO-PO™)</a></li>
+				<li><a href="#">CF DO Architect™ (DO-ARCH™)</a></li>
+				<li><a href="#">CF DO Developer™ (DO-DEV™)</a></li>
+				<li><a href="#">CF DO Project Manager™ (DO-PM™)</a></li>
+				<li><a href="#">CF DO Operations Engineer™ (DO-OPS™)</a></li>
+				<li><a href="#">CF DO Quality Assurance Engineer™ (DO-QA™)</a></li>
+				<li><a href="#">CF DO Information Security Engineer™ (DO-SEC™)</a></li>
+				<li><a href="#">CF DO Release Manager™ (DO-RM™)</a></li>
+				<li><a href="#">CF DO Trainer™ (DO-TRA™)</a></li>
+				<li><a href="#">CF DO Coach™ (DO-COA™)</a></li>
+			</ul>
+		<footer>
+			<a class="btn" href="#main">Register Your DevOps Certification Program</a>
+		</footer>
+	</section>
+	<section class="aside-box-section">
+		<header>
+			<h4>Le cours suivant</h4>
+		</header>
+		<div class="next-previews">
+			<img src="../images/style/designer_flatline.png" alt="Online lesson" />
+		</div>
+		<footer class="next-previews-footer">
+			<a class="btn" href="chapter_3.html">Précédent</a>
+			<a class="btn" href="chapter_5.html">Suivant</a>
+		</footer>
+	</section>
+	
+</aside>
+<!-- end aside -->
+
+</div>
+<!-- end content -->
+
+<!-- start footer -->
+<footer class="footer">
+    <div class="footer-row">	
+		<div class="footer-col">
+			<img src="../images/style/online_lesson_header.png" alt="Online lesson" />
+		</div>
+		<div class="footer-col">
+			<h4>QUI SOMMES-NOUS ?</h4>
+			<p>DevDz est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
+		</div>
+		<div class="footer-col">
+			<h4>Liens rapides</h4>
+			<ul>
+				<li><a href="index.html">Docker</a></li>
+				<li><a href="index.html">Git</a></li>
+				<li><a href="index.html">Subversion</a></li>
+				<li><a href="index.html">Github</a></li>
+				<li><a href="index.html">Jenkins</a></li>
+				<li><a href="index.html">Bitbucket</a></li>
+				<li><a href="index.html">Bamboo</a></li>
+				<li><a href="index.html">CircleCI</a></li>
+				<li><a href="index.html">Concourse</a></li>
+				<li><a href="index.html">TeamCity</a></li>
+				<li><a href="index.html">Travis CI</a></li>
+				<li><a href="index.html">Terraform</a></li>
+				<li><a href="index.html">Ansible</a></li>
+				<li><a href="index.html">Puppet</a></li>
+				<li><a href="index.html">Salt</a></li>
+				<li><a href="index.html">Kubernetes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<h4>Formation Devops - Copyrights © 2021 All Rights Reserved.</h4>
+	</div>
+</footer>
+<!-- end footer -->
+
+</body>
+</html>

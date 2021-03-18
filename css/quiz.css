@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #fafafa;
 }
-h1 {
+h1,h2,h3,h4,h5,h6,p,strong,p,label {
     font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 ul {
@@ -34,14 +34,18 @@ a.btn {
     margin: 0;
 }
 .logo-content img {
-    max-width: 82%;
+    max-width: 100%;
     position: relative;
-    bottom: 105px;
+    bottom: 140px;
+    right: 20px;
 }
 .text-content {
     margin-left: 60px;
     max-width: 690px;
     font-size: 23px;
+}
+.text-content h1 {
+    margin-bottom: 10px;
 }
 a.btn:hover {
     background-color: #dbefe3;
@@ -198,10 +202,9 @@ aside.aside {
     float: right;
     width: 28%;
     margin-right: 2%;
-    height: 100%;
-    background-color: #fff;
-    /* box-shadow: 0 0px 3px rgb(0 0 0 / 35%); */
-    box-shadow: 0 0px 3px rgb(0 0 0 / 30%);
+    margin-top: -200px;
+    position: sticky;
+    top: 0;
 }
 
 h2 {
@@ -375,7 +378,8 @@ ul.menu {
     background-color: #ffffff;
     border-radius: 5px;
     position: absolute;
-    width: 460px;
+    width: 1010px;
+    z-index: 1;
     display: none;
 }
 .menu > li:hover > a {
@@ -404,8 +408,8 @@ ul.menu {
 
 /* content style */
 .content {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
 /* main style */
@@ -413,6 +417,7 @@ main.main {
     float: left;
     width: 66%;
     margin-left: 2%;
+    margin-top: -200px;
     padding: 0;
     background-color: #fff;
     box-shadow: 0 0px 3px rgb(0 0 0 / 30%);
@@ -442,9 +447,10 @@ header {
     font-weight: bold;
 }
 .text-content p {
-    line-height: 20px;
+    line-height: 25px;
     color: #473f47;
     font-weight: 100;
+    margin: 8px 0 20px 0;
 }
 a {
     text-decoration: none;
@@ -1078,6 +1084,7 @@ button.rechercher:hover {
 header#quiz-header h3 {
     text-align: center;
     color: #39a767;
+    text-decoration: none;
 }
 
 .item-quiz {
@@ -1110,7 +1117,8 @@ header#quiz-header h3 {
     transition: 1s;
 }
 .item-quiz h4 {
-    color: #212121;
+    color: #5a5a5a;
+    text-decoration: none;
 }
 footer#quiz-footer span {
     color: #fff;
@@ -1120,4 +1128,89 @@ footer#quiz-footer span {
     float: left;
     border-radius: 2px;
     margin: 0px 30px 12px 40px;
+}
+/*******************/
+section.aside-box-section {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0px 3px rgb(0 0 0 / 30%);
+    margin-bottom: 20px;
+}
+
+section.aside-box-section h4 {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section.aside-box-section header {
+    padding: 15px;
+    background-color: #39a767;
+}
+
+section.aside-box-section img {
+    max-width: 145px;
+    position: relative;
+    top: 25px;
+}
+/*************/
+.right-box-content {
+    width: 215px;
+    float: right;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.left-box-content {
+    width: 150px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.right-box-content strong {
+    color: #39a767;
+}
+
+.right-box-content h5 {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+}
+section.aside-box-section p {
+    font-size: 15px;
+    margin: 12px 12px 10px 12px;
+    color: #222;
+}
+section.aside-box-section a {margin-left: -8px;}
+
+section.aside-box-section footer {
+    padding: 20px 20px 20px 22px;
+}
+/*******************/
+
+.aside-box-section ul li a {
+    color: #39a767;
+    border: 1px solid #39a767;
+    padding: 6px;
+    margin: 5px 5px 0px 2px;
+    font-size: 16px;
+    transition: 1s;
+}
+.aside-box-section ul li a:hover {
+    color: #fff;
+    border: 1px solid #fc682d;
+    background-color: #fc682d;
+    transition: 1s;
+}
+.aside-box-section ul {
+    padding: 0;
+    margin-top: 25px;
+}
+.aside-box-section ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+section.aside-box-section a {
+    font-size: 16px;
+    margin-left: 10px;
 }
