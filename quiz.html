@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<!-- début menu -->
+<!-- début Haut navbar -->
 <nav class="navbar">
     <ul class="menu">
 		<li class="item"><a href="index.html">Accueil</a></li>
@@ -37,7 +37,7 @@
 		</ul>
 	</div>
 </nav>
-<!-- fin menu -->
+<!-- fin Haut navbar -->
 
 <!-- début header -->
 <header class="header" id="haut">
@@ -53,26 +53,38 @@
 </header>
 <!-- fin header -->
 
-<!-- start main -->
+<!-- début main -->
 <main id="main" class="main">
+
+	<!-- début quiz section -->
 	<section class="quiz">
+	
 		<header id="quiz-header">
 			<h3>Quiz Devops MCQ et test en ligne.</h3>
 		</header>
+		
+		<!-- generer Quiz a partir javascript -->
 		<div class="all-quiz">
 			<script type="text/javascript">document.write(genererQuiz());</script>
 			<div class="item-quiz">
 				<button id="valider" onclick="checkReponse()">Valider</button>
 			</div>
 		</div>
+		
+		<!-- ajouter le résultat de quiz -->
 		<footer id="quiz-footer">
 		</footer>
+		
 	</section>
+	<!-- fin quiz section -->
+	
 </main>
-<!-- end main -->
+<!-- fin main -->
 
-<!-- start aside -->
+<!-- début aside -->
 <aside class="aside">
+
+	<!-- début Formateur section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Formateur</h4>
@@ -90,7 +102,10 @@
 			<p>Après avoir obtenu un bac +5 d'expert en ingénierie de l'informatique et des systèmes d'informations spécialisé Système, Réseau et Cloud Computing, et travaillé notamment chez Orange, j'ai décidé de me lancer dans le Consulting.</p>
 		</footer>
 	</section>
-	<section class="aside-box-section">
+	<!-- fin Formateur section -->
+	
+	<!-- début Certifications section -->
+	<section class="aside-box-section display">
 		<header>
 			<h4>Certifications DevOps (CF DO)</h4>
 		</header>
@@ -112,10 +127,12 @@
 			<a class="btn" href="#main">Register Your DevOps Certification Program</a>
 		</footer>
 	</section>
+	<!-- fin Certifications section -->
+	
 </aside>
-<!-- end aside -->
+<!-- fin aside -->
 
-<!-- start footer -->
+<!-- début footer -->
 <footer class="footer">
     <div class="footer-row">	
 		<div class="footer-col">
@@ -123,27 +140,27 @@
 		</div>
 		<div class="footer-col">
 			<h4>QUI SOMMES-NOUS ?</h4>
-			<p>Formation-dz.com est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
+			<p>DevDz est le 1er annuaire de la formation en ligne en Algérie. Notre mission est de mettre en relation les demandeurs de formation qu’ils soient professionnels ou particuliers avec les écoles et les organismes de formation.</p>
 		</div>
 		<div class="footer-col">
 			<h4>Liens rapides</h4>
 			<ul>
-				<li><a href="#">Php</a></li>
-				<li><a href="#">Css</a></li>
-				<li><a href="#">Wordpress</a></li>
-				<li><a href="#">Laravel</a></li>
-				<li><a href="#">Forge</a></li>
-				<li><a href="#">JetStreem</a></li>
-				<li><a href="#">Blogger</a></li>
-				<li><a href="#">Ui/Ux</a></li>
-				<li><a href="#">Ajax</a></li>
-				<li><a href="#">Django</a></li>
-				<li><a href="#">Nodejs</a></li>
-				<li><a href="#">Python</a></li>
-				<li><a href="#">Flask</a></li>
-				<li><a href="#">Nodejs</a></li>
-				<li><a href="#">Postman</a></li>
-				<li><a href="#">Npm</a></li>
+				<li><a href="index.html">Docker</a></li>
+				<li><a href="index.html">Git</a></li>
+				<li><a href="index.html">Subversion</a></li>
+				<li><a href="index.html">Github</a></li>
+				<li><a href="index.html">Jenkins</a></li>
+				<li><a href="index.html">Bitbucket</a></li>
+				<li><a href="index.html">Bamboo</a></li>
+				<li><a href="index.html">CircleCI</a></li>
+				<li><a href="index.html">Concourse</a></li>
+				<li><a href="index.html">TeamCity</a></li>
+				<li><a href="index.html">Travis CI</a></li>
+				<li><a href="index.html">Terraform</a></li>
+				<li><a href="index.html">Ansible</a></li>
+				<li><a href="index.html">Puppet</a></li>
+				<li><a href="index.html">Salt</a></li>
+				<li><a href="index.html">Kubernetes</a></li>
 			</ul>
 		</div>
 	</div>
@@ -151,7 +168,7 @@
 		<h4>Formation Devops - Copyrights © 2021 All Rights Reserved.</h4>
 	</div>
 </footer>
-<!-- end footer -->
+<!-- fin footer -->
 	
 </body>
 </html>

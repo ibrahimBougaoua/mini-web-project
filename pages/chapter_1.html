@@ -1,13 +1,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Histoire et définitions</title>
     <link rel="stylesheet" href="../css/single.css">
-    <title></title>
-	
+	<script type="text/javascript">
+	var image_affiche = 'devops1';
+	/* function pour changer l'image a chaque instant '2000' */
+	function image_toggle()
+	{
+		if(image_affiche == 'devops1')
+		{
+			document.getElementById('img_toggle').setAttribute('src','../images/content/single2.png');
+			image_affiche = 'devops2';
+		} else {
+			document.getElementById('img_toggle').setAttribute('src','../images/content/single.png');
+			image_affiche = 'devops1';
+		}
+	}
+	</script>
 </head>
-<body>
+<body onload="paysage = setInterval('image_toggle();',2000)">
 
-<!-- début menu -->
+<!-- début Haut navbar -->
 <nav class="navbar">
     <ul class="menu">
 		<li class="item"><a href="../index.html">Accueil</a></li>
@@ -37,7 +51,7 @@
 		</ul>
 	</div>
 </nav>
-<!-- fin menu -->
+<!-- fin Haut navbar -->
 
 <!-- début header -->
 <header class="header" id="haut">
@@ -52,27 +66,28 @@
 </header>
 <!-- fin header -->
 
-<!-- start content -->
-<div id="content" class="content">
-
-<!-- start main -->
+<!-- début main -->
 <main id="main" class="main">
 
+<!-- score progress -->
 <progress max="60" value="20"></progress>
 
+<!-- début presentation section -->
 <section class="presentation-section">
 	<div class="presentation-absolute">
 		<h4>Histoire et définitions</h4>
 		<p>Certification DevOps Institute Foundation (DOFD) - DASA DevOps Fundamentals</p>
-		<a class="btn" href="#main">Commencer</a>
+		<a class="btn" href="#main">lire la vidéo</a>
 		<div class="next-prev">
 			<a class="btn btn-prev" href="../single.html">Précédent</a>
 			<a class="btn btn-next" href="chapter_2.html">Suivant</a>
 		</div>
 	</div>
-	<img src="../images/content/single.png" alt="Online lesson" />
+	<img id="img_toggle" src="../images/content/single.png" alt="Online lesson" />
 </section>
+<!-- fin presentation section -->
 
+<!-- début description section -->
 <section class="description-section">
 	<h4>Histoire et définitions</h4>
 	<article>
@@ -110,7 +125,9 @@
 		</ul>
 	</article>
 </section>
+<!-- fin description section -->
 
+<!-- début Contenu du cours section -->
 <section class="box-section">
 	<article>
 		<header>
@@ -144,12 +161,15 @@
 		</table>
 	</article>
 </section>
+<!-- fin Contenu du cours section -->
 
 </main>
-<!-- end main -->
+<!-- fin main -->
 
-<!-- start aside -->
+<!-- début aside -->
 <aside class="aside">
+
+	<!-- début Formateur section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Formateur</h4>
@@ -167,7 +187,9 @@
 			<p>Après avoir obtenu un bac +5 d'expert en ingénierie de l'informatique et des systèmes d'informations spécialisé Système, Réseau et Cloud Computing, et travaillé notamment chez Orange, j'ai décidé de me lancer dans le Consulting.</p>
 		</footer>
 	</section>
+	<!-- fin Formateur section -->
 	
+	<!-- début Ce que vous apprendrez section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Ce que vous apprendrez</h4>
@@ -187,7 +209,9 @@
 			</tr>
 		</table>
 	</section>
+	<!-- fin Ce que vous apprendrez section -->
 	
+	<!-- début Prérequis section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Prérequis</h4>
@@ -204,7 +228,9 @@
 			</tr>
 		</table>
 	</section>
+	<!-- fin Prérequis section -->
 	
+	<!-- début Quiz section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Quiz</h4>
@@ -214,7 +240,10 @@
 			<a class="btn" href="quiz.html">Commencer</a>
 		</footer>
 	</section>
-	<section class="aside-box-section">
+	<!-- fin Quiz section -->
+	
+	<!-- début Contenu du cours section -->
+	<section class="aside-box-section display">
 		<header>
 			<h4>Contenu du cours</h4>
 		</header>
@@ -248,6 +277,9 @@
 			<a class="btn" href="#main">Les tests</a>
 		</footer>
 	</section>
+	<!-- fin Contenu du cours section -->
+	
+	<!-- début Certifications DevOps section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Certifications DevOps (CF DO)</h4>
@@ -270,6 +302,9 @@
 			<a class="btn" href="#main">Register Your DevOps Certification Program</a>
 		</footer>
 	</section>
+	<!-- fin Certifications DevOps section -->
+	
+	<!-- début Le cours suivant section -->
 	<section class="aside-box-section">
 		<header>
 			<h4>Le cours suivant</h4>
@@ -282,14 +317,12 @@
 			<a class="btn" href="chapter_2.html">Suivant</a>
 		</footer>
 	</section>
+	<!-- fin Le cours suivant section -->
 	
 </aside>
-<!-- end aside -->
+<!-- fin aside -->
 
-</div>
-<!-- end content -->
-
-<!-- start footer -->
+<!-- début footer -->
 <footer class="footer">
     <div class="footer-row">	
 		<div class="footer-col">
@@ -325,7 +358,7 @@
 		<h4>Formation Devops - Copyrights © 2021 All Rights Reserved.</h4>
 	</div>
 </footer>
-<!-- end footer -->
+<!-- fin footer -->
 
 </body>
 </html>

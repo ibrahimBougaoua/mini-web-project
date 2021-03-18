@@ -1,3 +1,6 @@
+/*
+	Valider la form avant envoi les données,Afin de pouvoir vous connecter à votre compte.
+*/
 function validationLogin()
 {
 	var labelUsername = document.getElementById("label_username");
@@ -15,11 +18,15 @@ function validationLogin()
 	else if(password.value.length < 5)
 		alert("password : Le nombre de caractères doit être supérieur à 5");
 	
+	/* renvoie false si tous les champs sont vides */
 	if(username.value === "" || password.value === "")
 		return false;
 	
 }
 
+/*
+	Valider la form avant envoi les données,Afin de pouvoir créer un compte.
+*/
 function validationSignup()
 {
 	var labelNom = document.getElementById("label_nom");
@@ -66,6 +73,7 @@ function validationSignup()
 	else if(password.value.length < 5)
 		alert("password : Le nombre de caractères doit être supérieur à 5");
 	
+	/* renvoie false si tous les champs sont vides */
 	if(	nom.value 		=== "" ||
 		prenom.value	=== "" ||
 		email.value 	=== "" ||
@@ -76,7 +84,9 @@ function validationSignup()
 		return false;
 }
 
-
+/*
+	Valider la form avant envoi les données,Pour pouvoir envoyer un message.
+*/
 function validationContact()
 {
 	var label_email = document.getElementById("label_email");
@@ -101,6 +111,7 @@ function validationContact()
 	else if(message.value.length < 15)
 		alert("message : Le nombre de caractères doit être supérieur à 15");
 	
+	/* renvoie false si tous les champs sont vides */
 	if(email.value === "" || subject.value === "" || message.value === "")
 		return false;
 	
