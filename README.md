@@ -33,7 +33,8 @@ Le travail est à réaliser en binôme ou trinôme. Au terme de ce projet, vous 
 │   ├── single.css
 │   ├── style.css
 ├── js/
-│   ├── main.js
+│   ├── form.js
+│   ├── quiz.js
 ├── images/
 │   ├── content
 │   ├── style
