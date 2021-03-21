@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" height="200" src="https://raw.githubusercontent.com/ibrahimBougaoua/mini-web-project/main/images/style/online_lesson_header.png?token=AJ62QTWFAHQ23WEOKIENNGTAMBKIO">
+  <img width="500" height="500" src="https://raw.githubusercontent.com/ibrahimBougaoua/mini-web-project/main/images/style/online_lesson_header.png?token=AJ62QTWFAHQ23WEOKIENNGTAMBKIO">
 </p>
 
 ## Réalisation d’un site web de formation en informatique
