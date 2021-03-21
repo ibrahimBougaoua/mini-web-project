@@ -28,12 +28,25 @@ Le travail est à réaliser en binôme ou trinôme. Au terme de ce projet, vous 
 <pre>
 [mini-web-project]/
 ├── css/
+│   ├── blog.css
+│   ├── quiz.css
+│   ├── single.css
 │   ├── style.css
 ├── js/
 │   ├── main.js
 ├── images/
-│   ├── logo.png
+│   ├── content
+│   ├── style
 ├── pages/
-│   ├── 404.html
+│   ├── chapter_1.html
+│   ├── chapter_2.html
+│   ├── chapter_3.html
+│   ├── chapter_4.html
+│   ├── chapter_5.html
+└── blog.html
 └── index.html
+└── login.html
+└── quiz.html
+└── signup.html
+└── single.html
 </pre>
